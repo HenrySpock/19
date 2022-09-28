@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- You static pages (css / javascript) get saved in a static directory -->
+    <link rel="stylesheet" href="/static/app.css">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <nav>
+        <a href="">PRETEND I AM A NAVBAR</a> 
+    </nav>
+
+    {% block content %} {% endblock %}
+
+    <br>
+    <footer>
+        PRETEND I AM A FOOTER
+    </footer>
+    <script src = "/static/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucky Number</title>
+</head>
+<body>
+    <h1>Your lucky number is: {{lucky_num}}, {{msg}}</h1>
+    {% if lucky_num == 3: %}
+        <h2>Hey, {{lucky_num}} is my lucky number too!</h2>
+        <img src="https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/RM5KUVCW3UI6ZA4WKVJL55K4HQ.jpg&w=916" height="100px" alt="">
+    {% else %}
+        <h2>(But seriously, {{lucky_num}} is not a great number.)</h2>
+        <img src="https://cdn.simplystamps.com/media/catalog/product/cache/5/image/600x600/9df78eab33525d08d6e5fb8d27136e95/8/8/8815-black-cat-halloween-craft-rubber-stamp-hcb.png" height="100px" alt="">
+    {% endif %}
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spell with me!</title>
+</head>
+<body>
+    <!-- {% for char in word %}
+    <h1> {{char.upper()}} </h1>
+    {% endfor %} -->
+<!-- Notice that the variable in the loop has .upper() applied - it is better to put this 
+in the root and pass in the uppercased variable to minimize code in the template: -->
+    {% for char in word %}
+        <h1> {{char}}izzle  </h1>
+    {% endfor %}
+</body>
+</html>
